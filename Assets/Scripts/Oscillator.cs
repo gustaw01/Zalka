@@ -25,7 +25,6 @@ public class Oscillator : MonoBehaviour
             move_factor = period - 1;
         }
         period -= move_factor;
-        Debug.Log(period);
     }
 
     // Update is called once per frame

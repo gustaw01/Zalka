@@ -7,6 +7,6 @@ public class BackToMenu : MonoBehaviour
 {
     void Update()
     {
-        if(Input.GetKey(KeyCode.Escape)) { SceneManager.LoadScene(1); }
+        if(Input.GetKey(KeyCode.Escape)) { SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1); }
     }
 }

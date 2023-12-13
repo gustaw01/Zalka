@@ -13,14 +13,14 @@ public class StatsManager : MonoBehaviour
 
     private void Awake() {
         gameManager = GameManager.instance;
-        lifeText.text = "Lifes: " + gameManager.lifes.ToString();
+        lifeText.text = "Lives: " + gameManager.lifes.ToString();
         difficultyText.text = "Difficulty: " + gameManager.difficulty.ToString();
     }
 
     public void DecreaseLifesAmount()
     {
         gameManager.lifes -= 1;
-        lifeText.text = "Lifes: " + gameManager.lifes.ToString();
+        lifeText.text = "Lives: " + gameManager.lifes.ToString();
     }
 
     public void IncreaseDifficulty()
